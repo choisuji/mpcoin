@@ -1221,7 +1221,7 @@ a {
   font-size: 30px;
   font-weight: 800;
   padding: 10px;
-  gap: 3px;
+  gap: 2px;
   color: #fff !important;
 }
 #Navigation ul li a.noSpace {
@@ -1233,7 +1233,7 @@ a {
 }
 @media (max-width:500px) {
   #Navigation ul li a {
-    gap: 2px;
+    gap: 1px;
   }
   #Navigation ul li a span {
     display: inline-block;

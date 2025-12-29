@@ -10,7 +10,7 @@
 
   --max-width: 512px;
 }
-@media (max-width:380px) {
+@media (max-width:500px) {
   :root {  
     --padding-x: 24px;
   
@@ -788,6 +788,11 @@ a {
 .coinList .coinItem .tcon .dft {
   opacity: .6;
 }
+@media (max-width:500px) {
+  .coinList .coinItem {
+    padding: 6px 16px;
+  }
+}
 @media (max-width:380px) {
   .coinList {
     padding: 0;
@@ -967,10 +972,18 @@ a {
   background-color: #233620;
   color: #fff;
 }
-@media (max-width:380px) {
+@media (max-width:500px) {
   #productsList .grid-item {
     padding: 5px 8px;
   }
+  #productsList .grid-item .plus {
+    right: 10px;
+    bottom: 10px;
+    width: 22px;
+    height: 22px;
+  }
+}
+@media (max-width:380px) {
   #productsList .grid-item .plus {
     right: 8px;
     bottom: 8px;
@@ -1214,6 +1227,17 @@ a {
 #Navigation ul li a.noSpace {
   justify-content: center;
   letter-spacing: 3px;
+}
+#Navigation ul li a span {
+  display: inline-block;
+}
+@media (max-width:500px) {
+  #Navigation ul li a {
+    gap: 2px;
+  }
+  #Navigation ul li a span {
+    display: inline-block;
+  }
 }
 @media (max-width:380px) {
   #Navigation ul li a {

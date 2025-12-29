@@ -19,10 +19,24 @@ const Navigation: React.FC<NavigationProps> = ({ isActive, setIsActive }) => {
   useEffect(() => {
     const aTags = document.querySelectorAll('#Navigation a:not(.noSpace)');
     aTags.forEach((aTag) => {
-      const element = aTag as HTMLAnchorElement; 
+      const element = aTag as HTMLAnchorElement;
       const text = element.innerText;
-      const wrappedText = text.split('').map(char => `<span>${char}</span>`).join('');
-      element.innerHTML = wrappedText; 
+  
+      // 각 문자를 <span>으로 감싸기
+      const wrappedText = text.split('').map(char => {
+        // 공백은 그대로 두기
+        if (char === ' ') {
+          return '<span>&nbsp;</span>';
+        }
+        // 빈 문자는 처리하지 않기
+        if (char === '') {
+          return '';  // 빈 문자열은 그대로 두기
+        }
+        // 그 외의 문자들은 <span>으로 감싸기
+        return `<span>${char}</span>`;
+      }).join('');
+  
+      element.innerHTML = wrappedText;
     });
   }, []);
 

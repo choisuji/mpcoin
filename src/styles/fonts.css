@@ -69,6 +69,41 @@ p.dft.mini {
     line-height: 1.6em;
 }
 
+@media (max-width:500px){
+    h1.dft {
+        font-size: calc(100vw * (32 / 500));
+    }
+    h1.dft.bigsize {
+        font-size: calc(100vw * (40 / 500));
+    }
+    h1.dft.huge {
+        font-size: calc(100vw * (45 / 500));
+    }
+    h2.dft {
+        font-size: calc(100vw * (30 / 500));
+    }
+    h3.dft {
+        font-size: calc(100vw * (24 / 500));
+    }
+    h4.dft {
+        font-size: calc(100vw * (22 / 500));
+    }
+    h4.dft.mini {
+        font-size: calc(100vw * (20 / 500));
+    }
+    h5.dft {
+        font-size: calc(100vw * (18 / 500));
+    }
+    h6.dft {
+        font-size: calc(100vw * (15 / 500));
+    }
+    p.dft {
+        font-size: calc(100vw * (17.5 / 500));
+    }
+    p.dft.mini {
+        font-size: calc(100vw * (14 / 500));
+    }
+}
 @media (max-width:380px){
     h1.dft {
         font-size: calc(100vw * (32 / 380));

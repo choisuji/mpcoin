@@ -567,6 +567,9 @@ a {
   }
 }
 @media (max-width:512px) {
+  #About {
+    min-height: auto !important;
+  }
   #About .AboutTxt .top .lft .logo {
     width: 35.7vw;
     height: 11.1vw;
@@ -635,6 +638,10 @@ a {
 #SaveTheEarth {
    background-color: #b9c3aa;
 }
+#SaveTheEarth .SaveTheEarthTop img {
+  width: 100% !important;
+  height: auto;
+}
 #SaveTheEarth .SaveTheEarthBottom {
   background: url(../../public/images/savetheearth_bg1.png) center top no-repeat;
   background-size: cover;
@@ -644,6 +651,9 @@ a {
 #SaveTheEarth .SaveTheEarthBottom .saveearth_title {
   padding: 21px 40px;
   text-align: center;
+}
+#SaveTheEarth .SaveTheEarthBottom .saveearth_title .titleTxt {
+  aspect-ratio: 236/27;
 }
 #SaveTheEarth .SaveTheEarthBottom .charsWrp {
   background: url(../../public/images/earth_deco_txt.svg) center center no-repeat;
@@ -656,8 +666,6 @@ a {
 }
 #SaveTheEarth .SaveTheEarthBottom .chars .savearth_char {
   aspect-ratio: 211 / 215;
-  max-width: 40vw;
-  height: auto;
 }
 #SaveTheEarth .SaveTheEarthBottom .chars .name {
   line-height: 1.2em;
@@ -665,17 +673,19 @@ a {
 #SaveTheEarth .SaveTheEarthBottom .btTxt h5.dft {
   letter-spacing: -0.02em;
 }
-@media (max-width:380px) {
+@media (max-width:512px) {
   #SaveTheEarth .SaveTheEarthBottom .saveearth_title .titleTxt {
-    max-width: 100%;
-    height: auto;
+    width: 46vw;
+    height: 5.2vw;
+  }
+  #SaveTheEarth .SaveTheEarthBottom .chars .savearth_char {
+    width: 41.2vw;
+    height: 41.9vw;
   }
   #SaveTheEarth .SaveTheEarthBottom .charsWrp {
-    background: url(../../public/images/earth_deco_txt.svg) center center no-repeat;
-    background-size: 25vw;
+    background-size: 16vw;
   }
 }
-
 
 /* Unlocked */
 #Unlocked {
@@ -712,6 +722,18 @@ a {
 }
 #Unlocked .unlockedItem .bottom .dft {
   color: #647167;
+}
+#Unlocked .unlockedItem .bottom .bird {
+  aspect-ratio: 108/132;
+}
+@media (max-width:512px) {
+  #Unlocked .unlockedItem .bottom {
+    gap: 3vw;
+  }
+  #Unlocked .unlockedItem .bottom .bird {
+    width: 21vw;
+    height: 25.7vw;
+  }
 }
 @media (max-width:380px) {
   #Unlocked .unlockedItem {
@@ -1149,7 +1171,7 @@ a {
 }
 @media (max-width:512px) {
   .footLinks .menuItem .dept2 {
-    font-size: calc(100vw * (12.5 / 512));
+    font-size: calc(100vw * (13.5 / 512));
   }
 }
 @media (max-width:380px) {
@@ -1157,7 +1179,7 @@ a {
     height: 25px;
   }
   .footLinks .menuItem .dept2 {
-    font-size: calc(100vw * (10 / 380));
+    font-size: calc(100vw * (11 / 380));
   }
 }
 /* Tail */
@@ -1290,7 +1312,7 @@ a {
 @media (max-width:512px) {
   #Navigation ul li a {
     gap: .5px;
-    font-size: calc(100vw * (35 / 512));
+    font-size: calc(100vw * (38 / 512));
     padding: calc(100vw * (10 / 512));
   }
   #Navigation ul li a span {
@@ -1299,7 +1321,7 @@ a {
 }
 @media (max-width:380px) {
   #Navigation ul li a {
-    font-size: calc(100vw * (26 / 380));
+    font-size: calc(100vw * (30 / 380));
     padding: calc(100vw * (8 / 380));
   }
 }

@@ -71,16 +71,16 @@ p.dft.mini {
 
 @media (max-width:512px){
     h1.dft {
-        font-size: calc(100vw * (32 / 512));
-    }
-    h1.dft.bigsize {
         font-size: calc(100vw * (40 / 512));
     }
+    h1.dft.bigsize {
+        font-size: calc(100vw * (55 / 512));
+    }
     h1.dft.huge {
-        font-size: calc(100vw * (45 / 512));
+        font-size: calc(100vw * (60 / 512));
     }
     h2.dft {
-        font-size: calc(100vw * (30 / 512));
+        font-size: calc(100vw * (32 / 512));
     }
     h3.dft {
         font-size: calc(100vw * (24 / 512));
@@ -101,42 +101,42 @@ p.dft.mini {
         font-size: calc(100vw * (17.5 / 512));
     }
     p.dft.mini {
-        font-size: calc(100vw * (14 / 512));
+        font-size: calc(100vw * (16.5 / 512));
     }
 }
 @media (max-width:450px){
     h1.dft {
-        font-size: calc(100vw * (32 / 450));
-    }
-    h1.dft.bigsize {
         font-size: calc(100vw * (40 / 450));
     }
+    h1.dft.bigsize {
+        font-size: calc(100vw * (55 / 450));
+    }
     h1.dft.huge {
-        font-size: calc(100vw * (45 / 450));
+        font-size: calc(100vw * (65 / 450));
     }
     h2.dft {
-        font-size: calc(100vw * (30 / 450));
+        font-size: calc(100vw * (32 / 450));
     }
     h3.dft {
         font-size: calc(100vw * (24 / 450));
     }
     h4.dft {
-        font-size: calc(100vw * (18 / 450));
+        font-size: calc(100vw * (19 / 450));
     }
     h4.dft.mini {
-        font-size: calc(100vw * (16.5 / 450));
+        font-size: calc(100vw * (17.5 / 450));
     }
     h5.dft {
-        font-size: calc(100vw * (15.5 / 450));
+        font-size: calc(100vw * (16.5 / 450));
     }
     h6.dft {
-        font-size: calc(100vw * (12 / 450));
+        font-size: calc(100vw * (13 / 450));
     }
     p.dft {
-        font-size: calc(100vw * (13.5 / 450));
+        font-size: calc(100vw * (14.5 / 450));
     }
     p.dft.mini {
-        font-size: calc(100vw * (13 / 450));
+        font-size: calc(100vw * (14 / 450));
     }
 }
 @media (max-width:380px){
@@ -162,16 +162,16 @@ p.dft.mini {
         font-size: calc(100vw * (16.5 / 380));
     }
     h5.dft {
-        font-size: calc(100vw * (13.5 / 380));
+        font-size: calc(100vw * (15 / 380));
     }
     h6.dft {
-        font-size: calc(100vw * (10 / 380));
+        font-size: calc(100vw * (12 / 380));
     }
     p.dft {
-        font-size: calc(100vw * (11.5 / 380));
+        font-size: calc(100vw * (13.5 / 380));
     }
     p.dft.mini {
-        font-size: calc(100vw * (11 / 380));
+        font-size: calc(100vw * (13 / 380));
     }
 }
 /* word-keep */

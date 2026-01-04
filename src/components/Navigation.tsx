@@ -15,8 +15,9 @@ const Navigation: React.FC<NavigationProps> = ({ isActive, setIsActive }) => {
     setIsActive(false);  // 네비게이션 닫기
   };
   
-  // 메뉴 span태그 감싸 쪼개기
   useEffect(() => {
+    
+  // 메뉴 span태그 감싸 쪼개기
     const aTags = document.querySelectorAll('#Navigation a:not(.noSpace)');
     aTags.forEach((aTag) => {
       const element = aTag as HTMLAnchorElement;
@@ -38,6 +39,14 @@ const Navigation: React.FC<NavigationProps> = ({ isActive, setIsActive }) => {
   
       element.innerHTML = wrappedText;
     });
+
+
+    // 스크롤 막기
+    if (!isActive) return;
+    document.body.style.overflowY = 'hidden';
+    return () => {
+      document.body.style.overflowY = '';
+    };
   }, []);
 
   return (

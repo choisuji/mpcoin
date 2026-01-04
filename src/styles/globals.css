@@ -727,6 +727,9 @@ a {
   aspect-ratio: 108/132;
 }
 @media (max-width:512px) {
+  #Unlocked .unlockedItem {
+    padding: 30px 15px;
+  }
   #Unlocked .unlockedItem .bottom {
     gap: 3vw;
   }

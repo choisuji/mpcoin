@@ -54,19 +54,19 @@ h4.dft.mini {
 }
 h5.dft {
     font-size: 2rem;
-    line-height: 1.6em;
+    line-height: 1.5em;
 }
 h6.dft {
     font-size: 1.4rem;
-    line-height: 1.6em;
+    line-height: 1.5em;
 }
 p.dft {
     font-size: 1.8rem;
-    line-height: 1.6em;
+    line-height: 1.5em;
 }
 p.dft.mini {
     font-size: 1.6rem;
-    line-height: 1.6em;
+    line-height: 1.5em;
 }
 
 @media (max-width:512px){

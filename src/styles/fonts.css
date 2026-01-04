@@ -49,7 +49,7 @@ h4.dft {
     line-height: 1.6em;
 }
 h4.dft.mini {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     line-height: 1.4em;
 }
 h5.dft {
@@ -69,39 +69,74 @@ p.dft.mini {
     line-height: 1.6em;
 }
 
-@media (max-width:500px){
+@media (max-width:512px){
     h1.dft {
-        font-size: calc(100vw * (32 / 500));
+        font-size: calc(100vw * (32 / 512));
     }
     h1.dft.bigsize {
-        font-size: calc(100vw * (40 / 500));
+        font-size: calc(100vw * (40 / 512));
     }
     h1.dft.huge {
-        font-size: calc(100vw * (45 / 500));
+        font-size: calc(100vw * (45 / 512));
     }
     h2.dft {
-        font-size: calc(100vw * (30 / 500));
+        font-size: calc(100vw * (30 / 512));
     }
     h3.dft {
-        font-size: calc(100vw * (24 / 500));
+        font-size: calc(100vw * (24 / 512));
     }
     h4.dft {
-        font-size: calc(100vw * (22 / 500));
+        font-size: calc(100vw * (22 / 512));
     }
     h4.dft.mini {
-        font-size: calc(100vw * (20 / 500));
+        font-size: calc(100vw * (20 / 512));
     }
     h5.dft {
-        font-size: calc(100vw * (18 / 500));
+        font-size: calc(100vw * (19 / 512));
     }
     h6.dft {
-        font-size: calc(100vw * (15 / 500));
+        font-size: calc(100vw * (13 / 512));
     }
     p.dft {
-        font-size: calc(100vw * (17.5 / 500));
+        font-size: calc(100vw * (17.5 / 512));
     }
     p.dft.mini {
-        font-size: calc(100vw * (14 / 500));
+        font-size: calc(100vw * (14 / 512));
+    }
+}
+@media (max-width:450px){
+    h1.dft {
+        font-size: calc(100vw * (32 / 450));
+    }
+    h1.dft.bigsize {
+        font-size: calc(100vw * (40 / 450));
+    }
+    h1.dft.huge {
+        font-size: calc(100vw * (45 / 450));
+    }
+    h2.dft {
+        font-size: calc(100vw * (30 / 450));
+    }
+    h3.dft {
+        font-size: calc(100vw * (24 / 450));
+    }
+    h4.dft {
+        font-size: calc(100vw * (18 / 450));
+    }
+    h4.dft.mini {
+        font-size: calc(100vw * (16.5 / 450));
+    }
+    h5.dft {
+        font-size: calc(100vw * (15.5 / 450));
+    }
+    h6.dft {
+        font-size: calc(100vw * (12 / 450));
+    }
+    p.dft {
+        font-size: calc(100vw * (13.5 / 450));
+    }
+    p.dft.mini {
+        font-size: calc(100vw * (13 / 450));
     }
 }
 @media (max-width:380px){
@@ -121,22 +156,22 @@ p.dft.mini {
         font-size: calc(100vw * (24 / 380));
     }
     h4.dft {
-        font-size: calc(100vw * (22 / 380));
+        font-size: calc(100vw * (18 / 380));
     }
     h4.dft.mini {
-        font-size: calc(100vw * (20 / 380));
+        font-size: calc(100vw * (16.5 / 380));
     }
     h5.dft {
-        font-size: calc(100vw * (16 / 380));
+        font-size: calc(100vw * (13.5 / 380));
     }
     h6.dft {
-        font-size: calc(100vw * (15 / 380));
+        font-size: calc(100vw * (10 / 380));
     }
     p.dft {
-        font-size: calc(100vw * (16 / 380));
+        font-size: calc(100vw * (11.5 / 380));
     }
     p.dft.mini {
-        font-size: calc(100vw * (14 / 380));
+        font-size: calc(100vw * (11 / 380));
     }
 }
 /* word-keep */

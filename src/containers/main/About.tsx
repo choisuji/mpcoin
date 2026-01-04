@@ -30,9 +30,9 @@ const About: React.FC<AboutProps> = ({ setIsModalActive }) => {
                                     priority
                                 />
                             </div>
-                            <p className="dft mb-none con font-Medium conbox conbox_xs">
+                            <h5 className="dft mb-none con font-Medium conbox conbox_xs">
                                 Memecoin is the first to support all nine main chains with the same smart contract wallet. Comprehensive support for nine main chains, including Ethereum, Base, Polygon, BSC, Arbitrum, Optmism, Ava- lanche, zkSync, and Tron. Memecoin is the first tosupport a decentralized bridge, en- abling coin transfers across multiplechains. Memecoin is the first to support a utili- ty-based ESG DAO platform and a decen- tralized wallet (Kookmin Wallet) combined service. Support for listing on DEXs such as Uniswap, PancakeSwap, and SusiSwap.
-                            </p>
+                            </h5>
                         </div>
                         <div className="conbox conbox_xs text-center">
                         <Btn 

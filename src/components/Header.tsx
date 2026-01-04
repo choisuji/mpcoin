@@ -52,14 +52,14 @@ const Header: React.FC<HeaderProps> = ({ setIsNavigationActive, isNavigationActi
   return (
     <header id="header" className={isSticky ? 'sticky' : ''}>
       <div className="con">
-        <a href="#Mpcoin" style={{ position: 'relative', width: '247px', height: '75px' }}>
+        <a href="#Mpcoin">
           <span></span>
           <Image
             className="logo"
             src="/images/BI_molepin.png"
             alt="Mpcoin logo"
-            fill
-            style={{ objectFit: 'contain' }} 
+            width={231}
+            height={75}
             priority
           />
         </a>

@@ -82,8 +82,8 @@ const MasonryGrid: React.FC = () => {
                 className='plus'
                 src={`/icons/plus.svg`}
                 alt={`Product Plus Icon`} 
-                width={31}
-                height={31} 
+                width={28}
+                height={28} 
               />
               <div className="img">
                 <Image
@@ -95,8 +95,8 @@ const MasonryGrid: React.FC = () => {
                 />
               </div>
               <div className="costInfo">
-                <h5 className="dft mb-none font-Heavy">Molepin T-shirts</h5>
-                <h5 className="dft mb-none font-Heavy">$110</h5>
+                <h4 className="dft mini mb-none font-Heavy">Molepin T-shirts</h4>
+                <h4 className="dft mini mb-none font-Heavy">$110</h4>
               </div>
             </a>
           ))}

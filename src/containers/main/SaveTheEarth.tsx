@@ -82,7 +82,7 @@ const About = () => {
                 <h5 className="dft mb-none font-ExtraBold c_dgr">
                     VISION
                 </h5>
-                <p className="dft mini mb-none font-Regular c_dgr">
+                <p className="dft mini mb-none font-Bold c_dgr">
                     Providing Web3-based rewards (tokens) to users who participate in nature conservation activities. <br />
                     Forming a participatory DAO community and contributing to practical carbon neutrality.
                 </p>

@@ -15,9 +15,9 @@ const Navigation: React.FC<NavigationProps> = ({ isActive, setIsActive }) => {
     setIsActive(false);  // 네비게이션 닫기
   };
   
+  // 메뉴 span태그 감싸 쪼개기
   useEffect(() => {
     
-  // 메뉴 span태그 감싸 쪼개기
     const aTags = document.querySelectorAll('#Navigation a:not(.noSpace)');
     aTags.forEach((aTag) => {
       const element = aTag as HTMLAnchorElement;
@@ -40,14 +40,24 @@ const Navigation: React.FC<NavigationProps> = ({ isActive, setIsActive }) => {
       element.innerHTML = wrappedText;
     });
 
-
-    // 스크롤 막기
-    if (!isActive) return;
-    document.body.style.overflowY = 'hidden';
-    return () => {
-      document.body.style.overflowY = '';
-    };
   }, []);
+
+  
+  // body 스크롤 제어
+  useEffect(() => {
+    if (isActive) {
+      document.documentElement.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+    }
+  
+    return () => {
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+    };
+  }, [isActive]);
 
   return (
     <div id="Navigation" className={isActive ? 'active' : ''}>
@@ -61,6 +71,9 @@ const Navigation: React.FC<NavigationProps> = ({ isActive, setIsActive }) => {
           </li>
           <li>
             <a href="#Intergrations" onClick={closeNavigation}>INTEGRATION</a>
+          </li>
+          <li>
+            <a href="#Products" onClick={closeNavigation}>MOLEPIN GOODS</a>
           </li>
           <li>
             {/* noSpace 입력시 그냥 중앙정렬 */}

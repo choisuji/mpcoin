@@ -1088,6 +1088,15 @@ a {
 #Explore .exploreItem .img {
   text-align: center;
 }
+#Explore .exploreItem .img .mole_bt {
+  aspect-ratio: 150/107;
+}
+@media (max-width:512px) {
+  #Explore .exploreItem .img .mole_bt {
+    width: 29.2vw;
+    height: 20.8vw;
+  }
+}
 
 /* Links */
 #Links {

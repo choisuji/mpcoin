@@ -118,25 +118,25 @@ p.dft.mini {
         font-size: calc(100vw * (32 / 450));
     }
     h3.dft {
-        font-size: calc(100vw * (24 / 450));
+        font-size: calc(100vw * (28 / 450));
     }
     h4.dft {
-        font-size: calc(100vw * (19 / 450));
+        font-size: calc(100vw * (20 / 450));
     }
     h4.dft.mini {
-        font-size: calc(100vw * (17.5 / 450));
+        font-size: calc(100vw * (18.5 / 450));
     }
     h5.dft {
-        font-size: calc(100vw * (16.5 / 450));
+        font-size: calc(100vw * (17.5 / 450));
     }
     h6.dft {
-        font-size: calc(100vw * (13 / 450));
+        font-size: calc(100vw * (14 / 450));
     }
     p.dft {
-        font-size: calc(100vw * (14.5 / 450));
+        font-size: calc(100vw * (15.5 / 450));
     }
     p.dft.mini {
-        font-size: calc(100vw * (14 / 450));
+        font-size: calc(100vw * (15 / 450));
     }
 }
 @media (max-width:380px){
@@ -162,7 +162,7 @@ p.dft.mini {
         font-size: calc(100vw * (16.5 / 380));
     }
     h5.dft {
-        font-size: calc(100vw * (15 / 380));
+        font-size: calc(100vw * (1 / 380));
     }
     h6.dft {
         font-size: calc(100vw * (12 / 380));

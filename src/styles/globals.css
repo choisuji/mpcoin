@@ -570,6 +570,12 @@ a {
   #About {
     min-height: auto !important;
   }
+  #About .AboutTxt {
+    padding: 25px 5vw;
+  }
+  #About .AboutTxt .con {
+    letter-spacing: 0.05vw;
+  }
   #About .AboutTxt .top .lft .logo {
     width: 35.7vw;
     height: 11.1vw;
@@ -580,7 +586,10 @@ a {
 }
 @media (max-width:380px) {
   #About .AboutTxt {
-    padding: 20px 20px;
+    padding: 20px 9vw;
+  }
+  #About .AboutTxt .con {
+    letter-spacing: 0.1vw;
   }
   #About .AboutTxt .top .lft .logo {
     width: 30.5vw;

@@ -162,7 +162,7 @@ p.dft.mini {
         font-size: calc(100vw * (16.5 / 380));
     }
     h5.dft {
-        font-size: calc(100vw * (1 / 380));
+        font-size: calc(100vw * (15.5 / 380));
     }
     h6.dft {
         font-size: calc(100vw * (12 / 380));

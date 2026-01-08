@@ -77,8 +77,8 @@ const MasonryGrid: React.FC = () => {
         </h4>
         <div ref={gridRef} className="grid conbox conbox_xxs">
           {filteredImages.map((image) => (
-            <div className="grid-item">
-              <a href="#" key={image.id} className="gridItemWrp">
+            <div className="grid-item" key={image.id}>
+              <a href="#" className="gridItemWrp">
                 <Image
                   className='plus'
                   src={`/icons/plus.svg`}

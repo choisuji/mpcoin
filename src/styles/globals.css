@@ -3,6 +3,7 @@
   --bg-secondary: #233620;
 
   --padding-x: 36px;
+  --padding-x-short: 24px;
 
   --border-radius-15 : 15px;
   --border-radius-20 : 20px;
@@ -13,6 +14,7 @@
 @media (max-width:512px) {
   :root {  
     --padding-x: 24px;
+    --padding-x-short: 16px;
   
     --border-radius-15 : 8px;
     --border-radius-20 : 10px;
@@ -22,6 +24,7 @@
 @media (max-width:380px) {
   :root {  
     --padding-x: 18px;
+    --padding-x-short: 12px;
   
     --border-radius-15 : 6px;
     --border-radius-20 : 8px;
@@ -92,8 +95,8 @@ a {
 }
 @media (max-width:512px) {
   #header .con .logo {
-    width: 46vw;
-    height: 15vw;
+    width: 38.5vw; /*231/600*/
+    height: 12.5vw; /*75/600*/
     aspect-ratio: 231 / 75;
   }
   #header .con .btnMenu {
@@ -376,7 +379,12 @@ a {
 
 /* eventItem */
 .eventItem {
-  padding: 30px 20px;
+  padding: 30px 10px;
+}
+@media (max-width:512px) {
+  .eventItem {
+    padding: 30px 12px;
+  }
 }
 @media (max-width:380px) {
   .eventItem {
@@ -391,7 +399,7 @@ a {
 #Friends .friendItem {
   aspect-ratio: 472 / 290;
   border-radius: var(--border-radius-15);
-  background-color: rgba(62, 78, 58, 0.3);
+  background: linear-gradient(to bottom, transparent, rgba(62, 78, 58, 0.3));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -404,7 +412,7 @@ a {
   -webkit-transition: all .3s;
 }
 #Friends .friendItem:hover {
-  background-color: rgba(103, 130, 96, 0.3);
+  background: linear-gradient(to bottom, rgba(62, 78, 58, 0.15), rgba(103, 130, 96, 0.3));
 }
 #Friends .friendItem .dft {
   color: #D2D2D2;
@@ -510,7 +518,7 @@ a {
   position: relative;
 }
 #About .inner {
-  padding: 60px 16px 0;
+  padding: 60px 12px 0;
 }
 #About .inner .AboutTxtWrp {
   background: linear-gradient(to bottom, #0B1605, #233620);
@@ -562,6 +570,9 @@ a {
   z-index: 0;
 }
 @media (min-width:512px) {
+  #About .inner {
+    padding: 40px 12px 0;
+  }
   #About .AboutTxt .tt {
     font-size: 4.5rem;
   }
@@ -570,11 +581,15 @@ a {
   #About {
     min-height: auto !important;
   }
+  #About .inner {
+    padding: 30px 12px 0;
+  }
   #About .AboutTxt {
-    padding: 25px 5vw;
+    padding: 25px 5vw 0;
   }
   #About .AboutTxt .con {
     letter-spacing: 0.05vw;
+    font-size: calc(100vw * (19 / 512));
   }
   #About .AboutTxt .top .lft .logo {
     width: 35.7vw;
@@ -584,12 +599,21 @@ a {
     width: 45vw !important;
   }
 }
+@media (max-width:450px) {
+  #About .AboutTxt .con {
+    font-size: calc(100vw * (17 / 450));
+  }
+}
 @media (max-width:380px) {
+  #About .inner {
+    padding: 15px 12px 0;
+  }
   #About .AboutTxt {
-    padding: 20px 9vw;
+    padding: 20px 6vw 0;
   }
   #About .AboutTxt .con {
-    letter-spacing: 0.1vw;
+    letter-spacing: 0;
+    font-size: calc(100vw * (13.9 / 380));
   }
   #About .AboutTxt .top .lft .logo {
     width: 30.5vw;
@@ -637,9 +661,26 @@ a {
   background-color: #1FBF44;
   color: #1C1F1A;
 }
-@media (max-width:380px) {
+@media (max-width:512px) {
+  .btnItem {
+    padding: 6px 10px;
+    font-size: calc(100vw * (15 / 512));
+    font-weight: 500;
+  }
+  .btnItem.primary {
+    background-color: #1FBF44;
+  }
+}
+@media (max-width:450px) {
   .btnItem {
     padding: 6px 15px;
+    font-size: calc(100vw * (14 / 450));
+  }
+}
+@media (max-width:380px) {
+  .btnItem {
+    padding: 5px 15px;
+    font-size: calc(100vw * (12 / 380));
   }
 }
 
@@ -655,7 +696,7 @@ a {
   background: url(../../public/images/savetheearth_bg1.png) center top no-repeat;
   background-size: cover;
   height: 100%;
-  padding: 0 var(--padding-x) 50px;
+  padding: 0 var(--padding-x) 30px;
 }
 #SaveTheEarth .SaveTheEarthBottom .saveearth_title {
   padding: 21px 40px;
@@ -683,6 +724,12 @@ a {
   letter-spacing: -0.02em;
 }
 @media (max-width:512px) {
+  #SaveTheEarth {
+    min-height: auto;
+  }
+  #SaveTheEarth .SaveTheEarthBottom {
+    padding-bottom: 25px;
+  }
   #SaveTheEarth .SaveTheEarthBottom .saveearth_title .titleTxt {
     width: 46vw;
     height: 5.2vw;
@@ -693,6 +740,11 @@ a {
   }
   #SaveTheEarth .SaveTheEarthBottom .charsWrp {
     background-size: 16vw;
+  }
+}
+@media (max-width:380px) {
+  #SaveTheEarth .SaveTheEarthBottom {
+    padding-bottom: 20px;
   }
 }
 
@@ -724,6 +776,12 @@ a {
 #Unlocked .swiperItem4 .unlockedItem {
   background-color: #241273;
 }
+#Unlocked .unlockedItem .titleTxt {
+  font-size: 2.4rem;
+  line-height: 1.5em;
+  color: #ddd;
+  font-weight: 500;
+}
 #Unlocked .unlockedItem .bottom {
   display: flex;
   align-items: center;
@@ -739,6 +797,9 @@ a {
   #Unlocked .unlockedItem {
     padding: 30px 15px;
   }
+  #Unlocked .unlockedItem .titleTxt {
+    font-size: calc(100vw * (24 / 512));
+  }
   #Unlocked .unlockedItem .bottom {
     gap: 3vw;
   }
@@ -747,9 +808,17 @@ a {
     height: 25.7vw;
   }
 }
+@media (max-width:450px) {
+  #Unlocked .unlockedItem .titleTxt {
+    font-size: calc(100vw * (21 / 450));
+  }
+}
 @media (max-width:380px) {
   #Unlocked .unlockedItem {
     padding: 25px 16px 25px;
+  }
+  #Unlocked .unlockedItem .titleTxt {
+    font-size: calc(100vw * (18 / 380));
   }
   #Unlocked .unlockedItem .bottom .img img {
     max-width: 20vw;
@@ -765,7 +834,7 @@ a {
   padding: 80px 0 30px;
 }
 #Intergrations .bt {
-  padding: var(--padding-x);
+  padding: var(--padding-x) 30px;
   background: url(../../public/images/coin_graph_bg.png) center center no-repeat;
   background-size: cover;
   padding-bottom: 10vw;
@@ -773,6 +842,11 @@ a {
 @media (max-width:1200px) {
   #Intergrations .bt {
     padding-bottom: 20vw;
+  }
+}
+@media (max-width:512px) {
+  #Intergrations {
+    min-height: auto;
   }
 }
 @media (max-width:380px) {
@@ -789,6 +863,9 @@ a {
   padding: 0 10px;
 }
 .coinList::-webkit-scrollbar {
+  width: 0px;
+}
+/* .coinList::-webkit-scrollbar {
   width: 7px;
 }
 .coinList::-webkit-scrollbar-thumb {
@@ -798,7 +875,7 @@ a {
 }
 .coinList::-webkit-scrollbar-track {
   background-color:transparent;
-}
+} */
 .coinList li {
   margin-top: 8px;
 }
@@ -830,8 +907,14 @@ a {
   opacity: .6;
 }
 @media (max-width:512px) {
+  .coinList {
+    max-height: 132vw;
+  }
+  .coinList li {
+    margin-top: 1.5vw;
+  }
   .coinList .coinItem {
-    padding: 6px 16px;
+    padding: 1.5vw 16px;
   }
   .coinList .coinItem .icon img {
     width: 8vw;
@@ -841,6 +924,9 @@ a {
 @media (max-width:380px) {
   .coinList {
     padding: 0;
+  }
+  .coinList {
+    max-height: 153vw;
   }
   .coinList .coinItem .tcon {
     width: calc(100% - 30px);
@@ -860,8 +946,8 @@ a {
 }
 #Holiday .holidayItem {
   aspect-ratio: 472 / 318;
-  border-radius: var(--border-radius-15);
-  padding: 20px;
+  border-radius: 10px;
+  padding: 12px 12px 20px;
 
   transition: all .3s;
   -o-transition: all .3s;
@@ -884,13 +970,18 @@ a {
   width: 100%;
   height: auto;
 }
-
+@media (max-width:450px) {
+  #Holiday .holidayItem {
+    padding: 8px 8px 16px;
+    border-radius: 8px;
+  }
+}
 /* Products */
 #Products {
   background-color: #B9C3A9;
 }
 #Products .top {
-  padding: var(--padding-x);
+  padding: var(--padding-x) var(--padding-x-short);
   background: linear-gradient(to bottom, #000, transparent 80%);
   padding-top: 60px;
 }
@@ -933,7 +1024,8 @@ a {
   -moz-transition: all .25s;
   -webkit-transition: all .25s;
 }
-#Products .top .mole:hover .mole_front {
+/* #Products .top .mole:hover .mole_front { */
+#Products .top .mole .mole_front {
   transform: scale(1) translateY(0%);
   opacity: 1;
 }
@@ -950,7 +1042,7 @@ a {
 
 /* productsList */
 #productsList {
-  padding: var(--padding-x);
+  padding: var(--padding-x) var(--padding-x-short);
 }
 #productsList .grid{ 
   display: flex;
@@ -959,6 +1051,9 @@ a {
   overflow-y: auto;
 }
 #productsList .grid::-webkit-scrollbar {
+  width: 0;
+}
+/* #productsList .grid::-webkit-scrollbar {
   width: 7px;
 }
 #productsList .grid::-webkit-scrollbar-thumb {
@@ -967,12 +1062,16 @@ a {
 }
 #productsList .grid::-webkit-scrollbar-track {
   background-color:transparent;
+} */
+#productsList .grid {
+  margin: 0 -12px;
 }
 #productsList .grid-item {
-  width: 47%;
-  margin-right: 3%;
-  margin-bottom: 3%;
+  width: 50%;
+  padding: calc(var(--padding-x-short)/2);
   float: left;
+}
+#productsList .gridItemWrp {
   display: block;
   transition: transform 0.4s ease;
   background-color: #C7D0BC;
@@ -996,9 +1095,13 @@ a {
 #productsList .grid-item .img img {
   max-width: 100%;
 }
+#productsList .grid-item .costInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #productsList .grid-item .costInfo .dft {
   color: #69775D;
-  letter-spacing: -0.04em;
 }
 #productsList .tabs { 
   display: flex;
@@ -1023,17 +1126,20 @@ a {
   color: #fff;
 }
 @media (max-width:512px) {
-  #productsList .grid-item {
-    padding: 5px 8px;
+  #productsList .grid {
+    margin: 0 -8px;
   }
   #productsList .grid-item .plus {
-    right: 10px;
-    bottom: 10px;
-    width: 6vw;
-    height: 6vw;
+    right: 8px;
+    bottom: 6px;
+    width: 5vw;
+    height: 5vw;
   }
 }
 @media (max-width:380px) {
+  #productsList .grid {
+    margin: 0 -6px;
+  }
   #productsList .grid-item .plus {
     right: 8px;
     bottom: 8px;
@@ -1104,6 +1210,11 @@ a {
   aspect-ratio: 150/107;
 }
 @media (max-width:512px) {
+  #Explore .exploreItem .circle {
+    filter: blur(8vw);
+    width: 31vw;
+    height: 31vw;
+  }
   #Explore .exploreItem .img .mole_bt {
     width: 29.2vw;
     height: 20.8vw;
@@ -1147,8 +1258,8 @@ a {
   left: 0;
   top: 0;
   width: 100%;
-  height: 11%;
-  background: linear-gradient(to bottom, #000, #210d04);
+  height: 18%;
+  background: linear-gradient(#000, transparent);
 }
 .centerMoleWrp:before {
   content: "";
@@ -1156,8 +1267,8 @@ a {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 11%;
-  background: linear-gradient(to top, #000, #261005);
+  height: 18%;
+  background: linear-gradient(transparent, #000);
 }
 .centerMoleWrp .centerMole {
   max-width: 100%;

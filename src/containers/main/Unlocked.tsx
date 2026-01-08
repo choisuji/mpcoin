@@ -29,7 +29,7 @@ const Unlocked = () => {
         <SwiperSlide key={id} className={`swiperItem${id}`}>
           <div className="unlockedItem">
             <div>
-              <h5 className="dft mb-none text-light text-center">
+              <h5 className="dft mb-none text-center titleTxt">
                 MPC: Achievement Unlocked!
               </h5>
               <div className="bottom conbox conbox_xs">

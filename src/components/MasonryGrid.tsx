@@ -5,14 +5,14 @@ import Image from 'next/image';
 import Masonry from 'masonry-layout';
 
 const images = [
-  { id: 1, category: 'T-shirt', src: '/images/product_t-shirt1.png' },
-  { id: 2, category: 'T-shirt', src: '/images/product_t-shirt2.png' },
-  { id: 3, category: 'Cap', src: '/images/product_t-cap1.png' },
-  { id: 4, category: 'Cap', src: '/images/product_t-cap2.png' },
-  { id: 5, category: 'T-shirt', src: '/images/product_t-shirt1.png' },
-  { id: 6, category: 'T-shirt', src: '/images/product_t-shirt2.png' },
-  { id: 7, category: 'Cap', src: '/images/product_t-cap1.png' },
-  { id: 8, category: 'Cap', src: '/images/product_t-cap2.png' },
+  { id: 1, category: 'Molepin T-shirts', cost:'110', src: '/images/product_t-shirt1.png' },
+  { id: 2, category: 'Molepin T-shirts', cost:'110', src: '/images/product_t-shirt2.png' },
+  { id: 3, category: 'Molepin Cap', cost:'110', src: '/images/product_t-cap1.png' },
+  { id: 4, category: 'Molepin Cap', cost:'110', src: '/images/product_t-cap2.png' },
+  { id: 5, category: 'Molepin T-shirts', cost:'110', src: '/images/product_t-shirt1.png' },
+  { id: 6, category: 'Molepin T-shirts', cost:'110', src: '/images/product_t-shirt2.png' },
+  { id: 7, category: 'Molepin Cap', cost:'110', src: '/images/product_t-cap1.png' },
+  { id: 8, category: 'Molepin Cap', cost:'110', src: '/images/product_t-cap2.png' },
 ];
 
 const categories = ['all', 'T-shirt', 'Cap'];
@@ -77,28 +77,32 @@ const MasonryGrid: React.FC = () => {
         </h4>
         <div ref={gridRef} className="grid conbox conbox_xxs">
           {filteredImages.map((image) => (
-            <a href="#" key={image.id} className="grid-item">
-              <Image
-                className='plus'
-                src={`/icons/plus.svg`}
-                alt={`Product Plus Icon`} 
-                width={28}
-                height={28} 
-              />
-              <div className="img">
+            <div className="grid-item">
+              <a href="#" key={image.id} className="gridItemWrp">
                 <Image
-                  src={image.src}
-                  alt={`Product ${image.id}`} 
-                  width={171}
-                  height={162} 
-                  layout="intrinsic"
+                  className='plus'
+                  src={`/icons/plus.svg`}
+                  alt={`Product Plus Icon`} 
+                  width={28}
+                  height={28} 
                 />
-              </div>
-              <div className="costInfo">
-                <h4 className="dft mini mb-none font-Heavy">Molepin T-shirts</h4>
-                <h4 className="dft mini mb-none font-Heavy">$110</h4>
-              </div>
-            </a>
+                <div className="img">
+                  <Image
+                    src={image.src}
+                    alt={`Product ${image.id}`} 
+                    width={171}
+                    height={162} 
+                    layout="intrinsic"
+                  />
+                </div>
+                <div className="costInfo">
+                  <div>
+                    <h4 className="dft mini mb-none font-Heavy f_kar">{image.category}</h4>
+                    <h4 className="dft mini mb-none font-Heavy f_kar">${image.cost}</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
           ))}
         </div>
       </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "../styles/fonts.css";
 import "../styles/globals.css";
+import { karla, notoSans } from './fonts';
 
 export const metadata: Metadata = {
   title: "Mpcoin App",
@@ -15,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head></head>
-      <body>
+      <body className={`${notoSans.variable} ${karla.variable}`}>
         <main>{children}</main>
       </body>
     </html>

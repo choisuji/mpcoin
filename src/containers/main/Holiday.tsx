@@ -41,9 +41,9 @@ const Holiday = () => {
               </div>
 
               <div className="txt">
-                <p className="dft mb-none c_lorg font-Bold conbox conbox_xxs">
+                <h5 className="dft mb-none c_lorg font-Medium conbox conbox_xxs">
                   {title}
-                </p>
+                </h5>
               </div>
             </div>
           </SwiperSlide>

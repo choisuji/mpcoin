@@ -1,6 +1,3 @@
-/* Noto Sans */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
 /*body*/
 body {
     font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, "Open Sans", "Helvetica Neue", sans-serif !important;
@@ -15,7 +12,8 @@ div, h1, h2, h3, h4, h5, h6, p {
 
 /*font*/
 .f_kar {
-	font-family: 'Karla', sans-serif !important;
+	font-family: "Karla", sans-serif !important;
+    letter-spacing: -0.06em;
 }
 
 /*dft*/

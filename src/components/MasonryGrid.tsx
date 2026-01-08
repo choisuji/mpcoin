@@ -5,14 +5,14 @@ import Image from 'next/image';
 import Masonry from 'masonry-layout';
 
 const images = [
-  { id: 1, category: 'Molepin T-shirts', cost:'110', src: '/images/product_t-shirt1.png' },
-  { id: 2, category: 'Molepin T-shirts', cost:'110', src: '/images/product_t-shirt2.png' },
-  { id: 3, category: 'Molepin Cap', cost:'110', src: '/images/product_t-cap1.png' },
-  { id: 4, category: 'Molepin Cap', cost:'110', src: '/images/product_t-cap2.png' },
-  { id: 5, category: 'Molepin T-shirts', cost:'110', src: '/images/product_t-shirt1.png' },
-  { id: 6, category: 'Molepin T-shirts', cost:'110', src: '/images/product_t-shirt2.png' },
-  { id: 7, category: 'Molepin Cap', cost:'110', src: '/images/product_t-cap1.png' },
-  { id: 8, category: 'Molepin Cap', cost:'110', src: '/images/product_t-cap2.png' },
+  { id: 1, category: 'T-shirt', name: 'Molepin T-shirts', cost:'110', src: '/images/product_t-shirt1.png' },
+  { id: 2, category: 'T-shirt', name: 'Molepin T-shirts', cost:'110', src: '/images/product_t-shirt2.png' },
+  { id: 3, category: 'Cap', name: 'Molepin T-Cap', cost:'110', src: '/images/product_t-cap1.png' },
+  { id: 4, category: 'Cap', name: 'Molepin T-Cap', cost:'110', src: '/images/product_t-cap2.png' },
+  { id: 5, category: 'T-shirt', name: 'Molepin T-shirts', cost:'110', src: '/images/product_t-shirt1.png' },
+  { id: 6, category: 'T-shirt', name: 'Molepin T-shirts', cost:'110', src: '/images/product_t-shirt2.png' },
+  { id: 7, category: 'Cap', name: 'Molepin T-Cap', cost:'110', src: '/images/product_t-cap1.png' },
+  { id: 8, category: 'Cap', name: 'Molepin T-Cap', cost:'110', src: '/images/product_t-cap2.png' },
 ];
 
 const categories = ['all', 'T-shirt', 'Cap'];
@@ -73,7 +73,7 @@ const MasonryGrid: React.FC = () => {
       <div className="conbox conbox_xs">
         {/* 그리드 */}
         <h4 className="dft font-Heavy f_kar c_dgr2">
-          Molepin Essentials
+          Essentials
         </h4>
         <div ref={gridRef} className="grid conbox conbox_xxs">
           {filteredImages.map((image) => (
@@ -97,7 +97,7 @@ const MasonryGrid: React.FC = () => {
                 </div>
                 <div className="costInfo">
                   <div>
-                    <h4 className="dft mini mb-none font-Heavy f_kar">{image.category}</h4>
+                    <h4 className="dft mini mb-none font-Heavy f_kar">{image.name}</h4>
                     <h4 className="dft mini mb-none font-Heavy f_kar">${image.cost}</h4>
                   </div>
                 </div>

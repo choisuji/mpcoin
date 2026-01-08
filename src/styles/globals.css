@@ -337,10 +337,12 @@ a {
 /* min_h */
 .min_h {
   min-height: 100vh;
+  min-height: 100svh;
 }
 /* Mpcoin */
 #Mpcoin {
   min-height: 100vh;
+  min-height: 100svh;
   background: url(../../public/images/Mpcoin_bg.jpg) center center no-repeat;
   background-size: cover;
   position: relative;
